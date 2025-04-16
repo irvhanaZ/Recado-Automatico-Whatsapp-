@@ -11,6 +11,9 @@
      Retirada da biblioteca Pygame. Embora ter uma tela sinalizando o inicio na automação, a mesma mais atrapalha do que ajuda. Como o objetivo é ser uma automação rápida e leve para não atrapalhar a gameplay, é irônico ter uma tela consumindo recursos só pra avisar que o script está trabalhando.
 
      Bugs Consertados: Bug da tela de apresentação da automação. Como a biblioteca Pygame foi retirada, não existe mais tela de apresentação, logo, não existe mais bug.
+
+## Versão 1.1.5 - Ajustes de emergência
+    Retirada do arquivo .otf que fazia parte da tela de apresentação.
      
 ## Mudanças futuras: 
     Migração do Pyautogui para o Pynpt
