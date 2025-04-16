@@ -1,6 +1,7 @@
 import playsound
 import pyautogui as pag
 import time
+import pyperclip
 import pygame
 import tkinter as tk
 from tkinter import simpledialog
@@ -39,7 +40,7 @@ for i in range(10):
             pygame.display.flip()
             time.sleep(0.05)
 
-    text = "iniciando Script. Mexa o mouse para continuar"
+    text = "iniciando Script"
     screen_size = screen.get_size()
 
     correndo = True
