@@ -12,8 +12,12 @@
 
      Bugs Consertados: Bug da tela de apresentação da automação. Como a biblioteca Pygame foi retirada, não existe mais tela de apresentação, logo, não existe mais bug.
 
-## Versão 1.1.5 - Ajustes de emergência
+## Versão 1.1(hotfix) - Ajustes de emergência
     Retirada do arquivo .otf que fazia parte da tela de apresentação.
      
-## Mudanças futuras: 
-    Migração do Pyautogui para o Pynpt
+## Versão 1.5
+    Migração da biblioteca pyautogui para a biblioteca pynput. Nada de errado com o pyautogui, é uma ótima biblioteca. Porém, percebi que ele tem um pouco de dificuldade em lidar com teclados que possuem o teclado númerico, sendo mais específico, ao usar ativar a função numlock do teclado, o pyautogui acaba pressionando 2 ao invés da seta para baixo. Esse bug estava atrapalhando o andamento da automação, tonando necessária a mudança de biblioteca.
+
+    Como o pyautogui foi removido, a automação agora usa somente o teclado, não sendo necessário arquivos .png para guiar o mouse. Isso pode ser benéfico para sistemas linux, pois ao testar essa automação em uma máquina virtual com Ubuntu LTS, havia problemas do pyautogui com o wayland.
+
+    Bugs consertados: Usuários que possuem e fazem uso do teclado númerico podem ficar despreocupados, a biblioteca pyntup reconhece o botão "down" como a seta para baixo, dessa forma, evitando conflitos com a função numlock do teclado.

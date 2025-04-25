@@ -1,10 +1,12 @@
 import playsound
-import pyautogui as pag
 import time
 import tkinter as tk
+from pynput.keyboard import Key, Controller
 from tkinter import simpledialog
-pag.PAUSE = 2
+
 procurar = "encontrado"
+keyboard = Controller()
+
 
 Contato = simpledialog.askstring("Entrada", "Digite o nome do contato")
 Mensagem1 = simpledialog.askstring("Entrada", "Digite a primeira mensagem") 
@@ -19,43 +21,59 @@ def main():
 for i in range(10):
     playsound.playsound('tuc.mp3')
     time.sleep(0.5)
-    pag.hotkey("win", "d")
-    pag.press("win") 
-    pag.write("whatsapp", interval= 0.25)
+    keyboard.press(Key.cmd)
+    keyboard.press('d')
+    keyboard.release(Key.cmd)
+    keyboard.release('d')
+    time.sleep(1)
+    keyboard.press(Key.cmd)
+    keyboard.release(Key.cmd)
+    time.sleep(3)
 
-    while procurar == "encontrado":
-        try:
-            imagem = pag.locateCenterOnScreen('whatsapp.png')
-            if imagem:
-                pag.click(imagem.x, imagem.y)
-                break
-        except Exception as e:
-            print(f"Ocorreu um erro: {e}")
-    time.sleep(4)
+    # Iniciando Whattsapp
+    keyboard.type('wh')
+    keyboard.press(Key.enter)
+    keyboard.release(Key.enter)
+    time.sleep(7)
     
-    pag.write(Contato, interval= 0.25)
-    pag.press("down")
-    pag.press("enter")
-    pag.write(Mensagem1, interval= 0.25)
-    time.sleep(2)
-    pag.press("enter")
-    pag.write(Mensagem2, interval= 0.25)
-    time.sleep(2)
-    pag.press("enter")
-    pag.write(Mensagem3, interval= 0.25)
-    time.sleep(2)
-    pag.press("enter")
-    pag.write(Mensagem4, interval= 0.25)
-    time.sleep(2)
-    pag.press("enter")
+    # Digitando o contato
+    keyboard.type(Contato)
+    time.sleep(1.0)
+    keyboard.press(Key.down)
+    keyboard.release(Key.down)
+    time.sleep(0.5)
+    keyboard.press(Key.enter)
+    keyboard.release(Key.enter)
+    time.sleep(0.5)
 
-    while procurar == "encontrado":
-        try:
-            fechar = pag.locateCenterOnScreen('fechar.png')
-            if fechar:
-                pag.click(fechar.x, fechar.y)
-                break
-        except Exception as e:
-            print(f"Ocorreu um erro: {e}")
+    # Digitando a primeira mensagem
+    keyboard.type(Mensagem1)
+    time.sleep(2)
+    keyboard.press(Key.enter)
+    keyboard.release(Key.enter)
+
+    # Digitando a segunda mensagem
+    keyboard.type(Mensagem2)
+    time.sleep(2)
+    keyboard.press(Key.enter)
+    keyboard.release(Key.enter)
+
+    # Digitando a terceira mensagem
+    keyboard.type(Mensagem3)
+    time.sleep(2)
+    keyboard.press(Key.enter)
+    keyboard.release(Key.enter)
+
+    # Digitando a quarta mensagem
+    keyboard.type(Mensagem4)
+    time.sleep(2)
+    keyboard.press(Key.enter)
+    keyboard.release(Key.enter)
+    time.sleep(1)
+
+    keyboard.press(Key.alt)
+    keyboard.press(Key.f4)
+    keyboard.release(Key.alt)
+    keyboard.release(Key.f4)
 
     time.sleep(300)

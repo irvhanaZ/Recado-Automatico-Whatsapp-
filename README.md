@@ -1,10 +1,10 @@
-As vezes enquanto mexo no computador eu fico preocupado com a minha esposa e pra piorar muitas das vezes ela usa fones de ouvido, fazendo com que eu tivesse que ir até ela para verificar se estava tudo bem.
-Até que, enquanto estava no trabalho, pensei comigo mesmo. Porquê não criar uma forma automática de enviar recados via whatsapp a cada 5 minutos para ver se ela precisa de alguma coisa? Bom, isso era só o começo.
+As vezes enquanto trabalho eu fico preocupado com a minha esposa e pra piorar muitas das vezes ela usa fones de ouvido, fazendo com que eu tivesse que ir até ela para verificar se estava tudo bem.
+Até que pensei comigo mesmo. Porquê não criar uma forma automática de enviar recados via whatsapp a cada 5 minutos para ver se ela precisa de alguma coisa? Bom, isso era só o começo.
 A ideia foi crescendo e amadurecendo e aí novamente eu pensei:
 
 "E se eu fizesse com que essa automação funcionasse para qualquer contato, enviando qualquer mensagem?"
 
-Então foi aí que nasceu o "Recado Automático". Utlizando o pyautogui, tkinter e entre outros módulos, o script gera 5 prompts:
+Então foi aí que nasceu o "Recado Automático". Utlizando o pynput, tkinter e entre outros módulos, o script gera 5 prompts:
 
 Primeiro Prompt - Nesse o usuario deve fornecer o nome do contato:
 
@@ -32,8 +32,3 @@ Após esses 5 prompts, o script irá começar de fato, enviando as mensagens par
 pois como dito antes, o processo ocorre a cada 5 minutos.
 
 Então, é isso. Até a próxima!
-
-Credits:
-Dash-Horizon-Demo by Krisna Teja [Fontada]
-
-Tuc.mp3 by Thiago's Efeitos Sonoros
