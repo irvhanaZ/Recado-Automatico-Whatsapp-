@@ -3,9 +3,19 @@ import time
 import tkinter as tk
 from pynput.keyboard import Key, Controller
 from tkinter import simpledialog
+import os
+import sys
 
-procurar = "encontrado"
-keyboard = Controller()
+if getattr(sys, 'frozen', False):
+      caminho_base = sys._MEIPASS
+else:
+      caminho_base = os.path.dirname(os.path.abspath(__file__))
+
+caminho_audio = os.path.join(caminho_base, 'tuc.mp3')
+
+def main():
+        root =  tk.Tk()
+        root.withdraw()
 
 
 Contato = simpledialog.askstring("Entrada", "Digite o nome do contato")
@@ -14,14 +24,12 @@ Mensagem2 = simpledialog.askstring("Entrada", "Digite a segunda mensagem")
 Mensagem3 = simpledialog.askstring("Entrada", "Digite a terceira mensagem")
 Mensagem4 = simpledialog.askstring("Entrada", "Digite a Última mensagem")
 
-def main():
-        root =  tk.Tk()
-        root.withdraw()
-
+keyboard = Controller()
 
 for i in range(10):
-    playsound.playsound('tuc.mp3')
+    playsound.playsound(caminho_audio)
     time.sleep(0.5)
+    
     keyboard.press(Key.cmd)
     keyboard.press('d')
     keyboard.release(Key.cmd)
@@ -82,3 +90,6 @@ for i in range(10):
     keyboard.release(Key.f4)
 
     time.sleep(300)
+
+if __name__ == "__main__":
+      main()
