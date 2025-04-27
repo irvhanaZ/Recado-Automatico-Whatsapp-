@@ -13,6 +13,7 @@ Mensagem1 = simpledialog.askstring("Entrada", "Digite a primeira mensagem")
 Mensagem2 = simpledialog.askstring("Entrada", "Digite a segunda mensagem") 
 Mensagem3 = simpledialog.askstring("Entrada", "Digite a terceira mensagem")
 Mensagem4 = simpledialog.askstring("Entrada", "Digite a Última mensagem")
+
 def main():
         root =  tk.Tk()
         root.withdraw()
