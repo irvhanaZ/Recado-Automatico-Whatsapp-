@@ -21,3 +21,12 @@
     Como o pyautogui foi removido, a automação agora usa somente o teclado, não sendo necessário arquivos .png para guiar o mouse. Isso pode ser benéfico para sistemas linux, pois ao testar essa automação em uma máquina virtual com Ubuntu LTS, havia problemas do pyautogui com o wayland.
 
     Bugs consertados: Usuários que possuem e fazem uso do teclado númerico podem ficar despreocupados, a biblioteca pyntup reconhece o botão "down" como a seta para baixo, dessa forma, evitando conflitos com a função numlock do teclado.
+
+## Versão 2.0 - Executável!
+    Criação de um executável do projeto, dessa forma permitindo que o usuário final possa usar o programa caso o mesmo não posssua uma IDE em seu computador.
+
+    Executável: Agora o executável possui um icone. É um icone temporário, o famoso placeholder, apenas usado para substituir o icone padrão do pyinstaller. Em versões futuras o programa terá um icone próprio.
+
+    Temporizador: Foi adicionado um temporizador entre as mensagens, pois foi notado que havia um atraso crítico para a automação quando a mesma funcionava em um sistema com alta carga de cpu. Isso provavelmente também ajudará o andamento da automação em sistemas mais modestos.
+
+    Arquivo .py renomeado de "base" para "recadoautomatico" seguido da versão do programa.

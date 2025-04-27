@@ -47,22 +47,26 @@ for i in range(10):
     time.sleep(0.5)
 
     # Digitando a primeira mensagem
+    time.sleep(1)
     keyboard.type(Mensagem1)
     time.sleep(2)
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
+    time.sleep(1)
 
     # Digitando a segunda mensagem
     keyboard.type(Mensagem2)
     time.sleep(2)
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
+    time.sleep(1)
 
     # Digitando a terceira mensagem
     keyboard.type(Mensagem3)
     time.sleep(2)
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
+    time.sleep(1)
 
     # Digitando a quarta mensagem
     keyboard.type(Mensagem4)
