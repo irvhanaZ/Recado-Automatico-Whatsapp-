@@ -36,7 +36,14 @@
 
     Bugs conhecidos: O programa ficará em segundo plano durante a contagem de 5 minutos, onde a unica forma de interrompe-lo é apagando seu processo no gerenciador de tarefas. Não é exatamente um bug, porém isso pode causar um certo incomodo caso um usuario mais leigo não precise mais do programa e não saiba como desativa-lo por este método. 
 
+## Versão 3.0 - Nova Funcionalidade!!!
+    Adicionado suporte ao app de mensagens Telegram. Desde de que esteja com o Telegram Desktop instalado e logado na sua conta, a automação funcionará perfeitamente.
+
+    Adicionado um icone próprio.
+
+    Agora ao iniciar o programa, o mesmo pedirá que o usuario digite qual app deseja utilizar. Atualmente suportados: Whatsapp e Telegram.
+
+    Nome alterado de Recado automático para messageZ.
+
 ## Mudanças futuras / Planejadas
     Adicionar uma parada de emergência caso seja necessário interromper as ativadades do programa. Atualmente a unica forma de interrompe-lo é encerrando seu processo no gerenciador de tarefas.
-
-    Criação de um icone próprio, atualmente o programa está usuando um incone livre de direitos autorais como placeholder.
