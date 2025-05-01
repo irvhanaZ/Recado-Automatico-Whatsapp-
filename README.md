@@ -1,10 +1,14 @@
+## 💭💭Como surgiu o messageZ?💭💭
 As vezes enquanto trabalho eu fico preocupado com a minha esposa e pra piorar muitas das vezes ela usa fones de ouvido, fazendo com que eu tivesse que ir até ela para verificar se estava tudo bem.
 Até que pensei comigo mesmo. Porquê não criar uma forma automática de enviar recados via whatsapp ou telegram a cada 5 minutos para ver se ela precisa de alguma coisa? Bom, isso era só o começo.
 A ideia foi crescendo e amadurecendo e aí novamente eu pensei:
 
 "E se eu fizesse com que essa automação funcionasse para qualquer contato, enviando qualquer mensagem?"
 
-Então foi aí que nasceu o "messageZ". Utlizando o pynput, tkinter e entre outros módulos, o script gera 6 prompts:
+Então foi aí que nasceu o "messageZ".
+
+## 🤔🤔 Como funciona? 🤔🤔
+ Utlizando o pynput, tkinter e entre outros módulos, o script gera 6 prompts:
 
 Primeiro Prompt - Aqui o usuario deve digitar o nome do app que deseja usar: Atualmente suportados: Whatsapp ou Telegram:
 
@@ -35,5 +39,11 @@ Sexto Prompt - E por fim, a última mensagem:
 
 Após esses 6 prompts, o script irá começar de fato, enviando as mensagens para o contato escolhido anteriormente. Não é necessário repetir o processo,
 pois como dito antes, o processo ocorre a cada 5 minutos.
+
+## ⚠️ Atenção ⚠️
+
+É necessário estar logado no app que deseja usar, caso contrário a automação não funcionará.
+
+Confira as notas de versão no arquivo changelog.md para saber as mudanças e o que está por vir no messageZ!!
 
 Então, é isso. Até a próxima!
